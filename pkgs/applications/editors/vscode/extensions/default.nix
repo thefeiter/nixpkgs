@@ -852,6 +852,8 @@ let
         };
       };
 
+      castwide.solargraph = callPackage ./castwide.solargraph { };
+
       catppuccin = {
         catppuccin-vsc = buildVscodeMarketplaceExtension {
           mktplcRef = {
