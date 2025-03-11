@@ -832,6 +832,7 @@ mapAliases {
   linuxPackages_6_11 = linuxKernel.packages.linux_6_11;
   linuxPackages_6_12 = linuxKernel.packages.linux_6_12;
   linuxPackages_6_13 = linuxKernel.packages.linux_6_13;
+  linuxPackages_ham = linuxKernel.packages.linux_ham;
   linuxPackages_rpi0 = linuxKernel.packages.linux_rpi1;
   linuxPackages_rpi02w = linuxKernel.packages.linux_rpi3;
   linuxPackages_rpi1 = linuxKernel.packages.linux_rpi1;

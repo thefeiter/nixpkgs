@@ -271,6 +271,15 @@ in {
 
     linux_libre = deblobKernel packageAliases.linux_default.kernel;
 
+    linux_ham = (callPackage ../os-specific/linux/kernel/mainline.nix {
+      branch = "6.13";
+    }).overrideAttrs {
+      extraStructuredConfig = {
+        HAMRADIO = lib.kernel.yes;
+        AX25 = lib.kernel.module;
+      };
+    };
+
     linux_latest_libre = deblobKernel packageAliases.linux_latest.kernel;
 
     linux_hardened = hardenedKernelFor packageAliases.linux_default.kernel { };

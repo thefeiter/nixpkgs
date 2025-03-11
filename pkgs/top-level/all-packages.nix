@@ -12062,6 +12062,9 @@ with pkgs;
   linuxPackages_6_13_hardened = linuxKernel.packages.linux_6_13_hardened;
   linux_6_13_hardened = linuxKernel.kernels.linux_6_13_hardened;
 
+
+  linuxPackages_ham = linuxKernel.kernels.linux_ham;
+
   # GNU Linux-libre kernels
   linuxPackages-libre = linuxKernel.packages.linux_libre;
   linux-libre = linuxPackages-libre.kernel;
